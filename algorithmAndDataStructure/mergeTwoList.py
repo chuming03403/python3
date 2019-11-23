@@ -6,6 +6,10 @@
 
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        """
+        合并两个有序的链表
+        https://leetcode-cn.com/problems/merge-two-sorted-lists
+        """
         if l1 and l2:
             if l1.val > l2.val:
                 l1, l2 = l2, l1;
